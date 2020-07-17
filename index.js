@@ -31,7 +31,7 @@ const App = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App peerAssessment={{ ...peerAssessment, title: 'Kursplanung' }} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 )

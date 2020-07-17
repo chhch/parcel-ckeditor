@@ -1,8 +1,8 @@
-#  Bug Report
+# 🐛 Bug Report
 
 Parcel with source maps enabled cannot import ckeditor5 Editor
 
-##  Configuration (.babelrc, package.json, cli command)
+## 🎛 Configuration (.babelrc, package.json, cli command)
 ```json
 {
   "name": "parcel-ckeditor",
@@ -25,11 +25,11 @@ Parcel with source maps enabled cannot import ckeditor5 Editor
 }
 ```
 
-##  Expected Behavior
+## 🤔 Expected Behavior
 
 `import ClassicEditor from '@ckeditor/ckeditor5-build-classic'` should work
 
-##  Current Behavior
+## 😯 Current Behavior
 
 ```
 > parcel build index.js
@@ -41,9 +41,18 @@ Parcel with source maps enabled cannot import ckeditor5 Editor
 > 5 | !function(t){const e=t.en=t.en||{};e.dictionary=Object.assign(e.dictionary||{},{"%0 o ...
 ```
 
-## Reproduce
+## 💁 Possible Solution
+
+Install Parcel 2
 
 ```shell
-npm install
-npm run start
+npm install -D parcel@next
 ```
+
+## 🌍 Your Environment
+
+| Software         | Version(s) |
+| ---------------- | ---------- |
+| Parcel           | 1.12.4     |     
+| Node             | 14.4.0     |
+| npm              | 6.14.5     |
